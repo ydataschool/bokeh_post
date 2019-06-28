@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.1.min.css" type="text/css"/>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+</head>
+<body>
+<div class="bk-root" id="aa4d6f6d-d554-4896-8686-8010c079a44a"></div>
+
+<script type="application/json" id="66113">
+    {
+        "a59ec414-d2df-4954-99b7-90aa23b17e21": {
+            "roots": {
+                "references": [
+                    {
+                        "attributes": {
+                            "children": [
+                                {
+                                    "id": "63712",
+                                    "subtype": "Figure",
+                                    "type": "Plot"
+                                },
+                                {
+                                    "id": "63778",
+                                    "subtype": "Figure",
+                                    "type": "Plot"
+                                }
+                            ]
+                        },
+                        "id": "63819",
+                        "type": "Column"
+                    },
+                    {
+                        "attributes": {
+                            "data_source": {
+                                "id": "63812",
+                                "type": "ColumnDataSource"
+                            },
+                            "glyph": {
+                                "id": "63813",
+                                "type": "VBar"
+                            },
+                            "hover_glyph": null,
+                            "muted_glyph": null,
+                            "nonselection_glyph": {
+                                "id": "63814",
+                                "type": "VBar"
+                            },
+                            "selection_glyph": null,
+                            "view": {
+                                "id": "63816",
+                                "type": "CDSView"
+                            }
+                        },
+                        "id": "63815",
+                        "type": "GlyphRenderer"
+                    },
+                    {
+                        "attributes": {
+                            "source": {
+                                "id": "63812",
+                                "type": "ColumnDataSource"
+                            }
+                        },
+                        "id": "63816",
+                        "type": "CDSView"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "65563",
+                        "type": "DatetimeTickFormatter"
+                    },
+                    {
+                        "attributes": {
+                            "mantissas": [
+                                1,
+                                2,
+                                5
+                            ],
+                            "max_interval": 500.0,
+                            "num_minor_ticks": 0
+                        },
+                        "id": "65580",
+                        "type": "AdaptiveTicker"
+                    },
+                    {
+                        "attributes": {
+                            "base": 60,
+                            "mantissas": [
+                                1,
+                                2,
+                                5,
+                                10,
+                                15,
+                                20,
+                                30
+                            ],
+                            "max_interval": 1800000.0,
+                            "min_interval": 1000.0,
+                            "num_minor_ticks": 0
+                        },
+                        "id": "65581",
+                        "type": "AdaptiveTicker"
+                    },
+                    {
+                        "attributes": {
+                            "base": 24,
+                            "mantissas": [
+                                1,
+                                2,
+                                4,
+                                6,
+                                8,
+                                12
+                            ],
+                            "max_interval": 43200000.0,
+                            "min_interval": 3600000.0,
+                            "num_minor_ticks": 0
+                        },
+                        "id": "65582",
+                        "type": "AdaptiveTicker"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11,
+                                12,
+                                13,
+                                14,
+                                15,
+                                16,
+                                17,
+                                18,
+                                19,
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                25,
+                                26,
+                                27,
+                                28,
+                                29,
+                                30,
+                                31
+                            ]
+                        },
+                        "id": "65583",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                4,
+                                7,
+                                10,
+                                13,
+                                16,
+                                19,
+                                22,
+                                25,
+                                28
+                            ]
+                        },
+                        "id": "65584",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                8,
+                                15,
+                                22
+                            ]
+                        },
+                        "id": "65585",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                15
+                            ]
+                        },
+                        "id": "65586",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11
+                            ]
+                        },
+                        "id": "65587",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                2,
+                                4,
+                                6,
+                                8,
+                                10
+                            ]
+                        },
+                        "id": "65588",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                4,
+                                8
+                            ]
+                        },
+                        "id": "65589",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                6
+                            ]
+                        },
+                        "id": "65590",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "callback": null,
+                            "data": {
+                                "adj_close": {
+                                    "__ndarray__": "H4XrUbgeVUCamZmZmblVQHE9CtejwFZAZmZmZma2VUAzMzMzM7NVQFK4HoXrYVZAcT0K16PAVkBcj8L1KCxWQAAAAAAAsFZAUrgehevhVkB7FK5H4YpWQGZmZmZm9lZAXI/C9SgsV0BxPQrXo8BXQClcj8L16FdAUrgehesRWEBI4XoUrkdYQClcj8L1aFlACtejcD26WkAfhetRuM5ZQFK4HoXrEVlAXI/C9SjcWUAAAAAAAPBYQKRwPQrXs1lASOF6FK6HWUD2KFyPwlVaQFyPwvUo3FlAAAAAAADwWUAK16NwPbpZQPYoXI/CJVlAZmZmZmb2V0CuR+F6FE5XQB+F61G4HlZA4XoUrkeRV0A9CtejcH1XQB+F61G4HlZAKVyPwvXoVUAAAAAAAHBWQDMzMzMzs1dASOF6FK5HV0CuR+F6FE5XQD0K16NwfVdAuB6F61GYV0BmZmZmZnZXQNejcD0Kx1ZAXI/C9SisVkCamZmZmblWQGZmZmZmJldAPQrXo3D9VkCamZmZmblVQEjhehSuB1ZASOF6FK4HVkCamZmZmflVQD0K16Nw/VZAcT0K16PAVkAfhetRuF5WQDMzMzMzc1ZAexSuR+EKV0D2KFyPwqVWQI/C9ShcH1dAZmZmZmZ2VkAfhetRuI5WQGZmZmZmZldAw/UoXI+iVkDsUbgehVtWQDMzMzMz81ZA7FG4HoXLV0CkcD0K17NXQPYoXI/ChVlAUrgehetBWUAfhetRuD5ZQOF6FK5HEVlACtejcD0qWUBI4XoUrndYQDMzMzMzo1hAMzMzMzPjV0CkcD0K12NZQOxRuB6Fi1hAZmZmZmYmWECF61G4HpVXQLgehetRmFdAUrgeheshWEBmZmZmZiZXQAAAAAAAAFhA7FG4HoULWEBcj8L1KBxXQLgehetRGFdA9ihcj8IlVkB7FK5H4VpVQClcj8L1KFZACtejcD3KVUCkcD0K14NVQOF6FK5HEVZAj8L1KFzvVUBcj8L1KOxVQHE9CtejQFZACtejcD3KVUAAAAAAAPBWQHsUrkfhulhApHA9CtczWEA=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                },
+                                "close": {
+                                    "__ndarray__": "AAAAAAAQWUBI4XoUrsdZQAAAAAAAAFtApHA9CtfDWUAAAAAAAMBZQAAAAAAAkFpAAAAAAAAAW0AAAAAAAFBaQFyPwvUo7FpASOF6FK4nW0AAAAAAAMBaQAAAAAAAQFtAAAAAAACAW0AAAAAAADBcQAAAAAAAYFxAAAAAAACQXEAAAAAAANBcQEjhehSuJ15ASOF6FK63X0AAAAAAAKBeQAAAAAAAwF1AAAAAAACwXkBI4XoUrpddQAAAAAAAgF5AXI/C9ShMXkAAAAAAAEBfQAAAAAAAsF5ASOF6FK7HXkBI4XoUrodeQEjhehSu111AAAAAAABwXEBI4XoUrqdbQAAAAAAAQFpASOF6FK73W0AAAAAAAOBbQAAAAAAAQFpAAAAAAAAAWkAAAAAAAKBaQAAAAAAAIFxAAAAAAACgW0BI4XoUrqdbQAAAAAAA4FtAAAAAAAAAXEBI4XoUrtdbQEjhehSuB1tASOF6FK7nWkBI4XoUrvdaQAAAAAAAcFtAAAAAAABAW0AAAAAAAMBZQFyPwvUoHFpAXI/C9SgcWkBcj8L1KAxaQAAAAAAAQFtASOF6FK73WkCkcD0K14NaQFyPwvUonFpAAAAAAABQW0BI4XoUrtdaQEjhehSuZ1tAAAAAAACgWkBcj8L1KLxaQFyPwvUovFtApHA9CtfTWkAAAAAAAIBaQKRwPQrXM1tApHA9CtczXEBI4XoUrhdcQAAAAAAAQF5AAAAAAADwXUBcj8L1KOxdQPYoXI/CtV1ApHA9CtfTXUAAAAAAAABdQKRwPQrXM11AAAAAAABQXEBI4XoUrhdeQEjhehSuF11AAAAAAACgXECkcD0K1/NbQEjhehSu91tACtejcD2aXEAAAAAAAHBbQFK4HoXrcVxAAAAAAACAXECkcD0K12NbQAAAAAAAYFtAAAAAAABAWkAAAAAAAFBZQKRwPQrXQ1pApHA9CtfTWUAAAAAAAIBZQEjhehSuJ1pAAAAAAAAAWkBcj8L1KPxZQAAAAAAAYFpApHA9CtfTWUAAAAAAADBbQAAAAAAAUF1AAAAAAACwXEA=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                },
+                                "date": {
+                                    "__ndarray__": "AACAp/mza0IAAABznrRrQgAAgD5DtWtCAAAAoTG3a0IAAIBs1rdrQgAAADh7uGtCAACAAyC5a0IAAADPxLlrQgAAgDGzu2tCAAAA/Ve8a0IAAIDI/LxrQgAAAJShvWtCAACAX0a+a0IAAADCNMBrQgAAgI3ZwGtCAAAAWX7Ba0IAAIAkI8JrQgAAAPDHwmtCAACAUrbEa0IAAAAeW8VrQgAAgOn/xWtCAAAAtaTGa0IAAICAScdrQgAAAOM3yWtCAACArtzJa0IAAAB6gcprQgAAgEUmy2tCAAAAEcvLa0IAAIBzuc1rQgAAAD9ezmtCAACACgPPa0IAAADWp89rQgAAgKFM0GtCAAAABDvSa0IAAIDP39JrQgAAAJuE02tCAACAZinUa0IAAICUvNZrQgAAAGBh12tCAACAKwbYa0IAAAD3qthrQgAAgMJP2WtCAAAAJT7ba0IAAIDw4ttrQgAAALyH3GtCAACAhyzda0IAAABT0d1rQgAAgLW/32tCAAAAgWTga0IAAIBMCeFrQgAAABiu4WtCAACA41Lia0IAAABGQeRrQgAAgBHm5GtCAAAA3Yrla0IAAICoL+ZrQgAAAHTU5mtCAACA1sLoa0IAAACiZ+lrQgAAgG0M6mtCAAAAObHqa0IAAIAEVutrQgAAgDLp7WtCAAAA/o3ua0IAAIDJMu9rQgAAAJXX72tCAACA98Xxa0IAAADDavJrQgAAgI4P82tCAAAAWrTza0IAAIAlWfRrQgAAAIhH9mtCAACAU+z2a0IAAAAfkfdrQgAAgOo1+GtCAAAAttr4a0IAAIAYyfprQgAAAORt+2tCAACArxL8a0IAAAB7t/xrQgAAgEZc/WtCAAAAqUr/a0IAAIB07/9rQgAAAECUAGxCAACACzkBbEIAAADX3QFsQgAAgDnMA2xCAACA0BUFbEIAAACcugVsQgAAgGdfBmxCAAAAyk0IbEIAAICV8ghsQgAAAGGXCWxCAACALDwKbEIAAAD44ApsQgAAgFrPDGxCAAAAJnQNbEIAAIDxGA5sQgAAAL29DmxCAACAiGIPbEI=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                },
+                                "high": {
+                                    "__ndarray__": "AAAAAABgWkBcj8L1KFxaQAAAAAAAgFtAAAAAAADAW0AAAAAAAMBaQEjhehSut1pAAAAAAAAAW0AAAAAAAEBbQAAAAAAAQFtAAAAAAACAW0AAAAAAABBbQKRwPQrXc1tAXI/C9SjsW0BI4XoUrldcQFyPwvUorFxASOF6FK7XXEBI4XoUrvdcQAAAAAAAkF5AAAAAAAAIYEAAAAAAAMBfQFyPwvUonF5AAAAAAADAXkAAAAAAAPBeQEjhehSul15AXI/C9Si8X0AAAAAAAHBfQAAAAAAAAGBAXI/C9ShsX0BI4XoUrldfQEjhehSuZ15ASOF6FK7nXUCkcD0K15NcQAAAAAAAMFxAAAAAAAAQXEBI4XoUrsdcQAAAAAAAcFtAAAAAAABQWkBcj8L1KMxaQAAAAAAAQFxAXI/C9Sh8XEBI4XoUrkdcQFyPwvUoLFxAXI/C9ShMXEBI4XoUrmdcQEjhehSux1tAXI/C9ShMW0BI4XoUrmdbQEjhehSul1tASOF6FK6nW0Bcj8L1KGxaQAAAAAAA4FpAAAAAAABwWkBI4XoUrjdaQAAAAAAAUFtASOF6FK43W0CkcD0K19NaQAAAAAAA4FpAAAAAAABQW0AAAAAAAIBbQAAAAAAAgFtAAAAAAAAQXEBcj8L1KMxaQAAAAAAAwFtAAAAAAACwW0Bcj8L1KDxbQAAAAAAAcFtAXI/C9SiMXEBI4XoUrqdcQAAAAAAAcF5ApHA9CteTXkAAAAAAADBeQFyPwvUoHF5AXI/C9Sj8XUAAAAAAAABeQAAAAAAAwF1AXI/C9ShsXUBI4XoUrhdeQFyPwvUoLF5AXI/C9Sj8XECkcD0K15NcQEjhehSuZ1xAAAAAAADwXECkcD0K1zNcQFyPwvUozFxASOF6FK6XXEBcj8L1KExcQEjhehSud1tASOF6FK5nWkBI4XoUrkdaQKRwPQrXQ1pAXI/C9Sg8WkAAAAAAAABaQEjhehSud1pAXI/C9Sh8WkBI4XoUrjdaQEjhehSu91pApHA9CtczWkAAAAAAAGBbQKRwPQrXc11AAAAAAABAXUA=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                },
+                                "index": [
+                                    0,
+                                    1,
+                                    2,
+                                    3,
+                                    4,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20,
+                                    21,
+                                    22,
+                                    23,
+                                    24,
+                                    25,
+                                    26,
+                                    27,
+                                    28,
+                                    29,
+                                    30,
+                                    31,
+                                    32,
+                                    33,
+                                    34,
+                                    35,
+                                    36,
+                                    37,
+                                    38,
+                                    39,
+                                    40,
+                                    41,
+                                    42,
+                                    43,
+                                    44,
+                                    45,
+                                    46,
+                                    47,
+                                    48,
+                                    49,
+                                    50,
+                                    51,
+                                    52,
+                                    53,
+                                    54,
+                                    55,
+                                    56,
+                                    57,
+                                    58,
+                                    59,
+                                    60,
+                                    61,
+                                    62,
+                                    63,
+                                    64,
+                                    65,
+                                    66,
+                                    67,
+                                    68,
+                                    69,
+                                    70,
+                                    71,
+                                    72,
+                                    73,
+                                    74,
+                                    75,
+                                    76,
+                                    77,
+                                    78,
+                                    79,
+                                    80,
+                                    81,
+                                    82,
+                                    83,
+                                    84,
+                                    85,
+                                    86,
+                                    87,
+                                    88,
+                                    89,
+                                    90,
+                                    91,
+                                    92,
+                                    93,
+                                    94,
+                                    95,
+                                    96,
+                                    97,
+                                    98,
+                                    99
+                                ],
+                                "low": {
+                                    "__ndarray__": "pHA9CtcDWUAAAAAAAOBYQKRwPQrXg1pAAAAAAABAWUBcj8L1KGxZQAAAAAAAsFlASOF6FK4HWkAAAAAAAEBaQAAAAAAAoFlASOF6FK7XWkBI4XoUrodaQEjhehSu91pAXI/C9SjsWkBcj8L1KHxbQFyPwvUo/FtASOF6FK53XEBI4XoUrudbQKRwPQrXw1xASOF6FK4nX0CkcD0K14NeQAAAAAAAoF1AXI/C9SisXUCkcD0K10NdQFyPwvUo3F1ApHA9CtfDXEAAAAAAAPBdQEjhehSup15AAAAAAABgXkCkcD0K12NeQKRwPQrXc11AXI/C9SjsW0AAAAAAAIBbQEjhehSut1lApHA9CtfTWUCkcD0K14NbQKRwPQrXs1lApHA9CteDWUAAAAAAAFBZQFyPwvUonFpAAAAAAABAW0Bcj8L1KCxbQEjhehSuh1tAXI/C9SicW0Bcj8L1KKxbQKRwPQrXo1pAXI/C9SjMWkAAAAAAAKBaQEjhehSu51pAAAAAAAAQW0CkcD0K14NZQFyPwvUozFlAAAAAAADQWUAAAAAAAIBZQAAAAAAAQFpASOF6FK6HWkBcj8L1KCxaQAAAAAAAQFpAXI/C9SjcWUBI4XoUrsdaQFyPwvUoDFpASOF6FK6XWkCkcD0K1yNaQFyPwvUo7FpAXI/C9SjMWkAAAAAAAGBaQEjhehSu51pAXI/C9SgcW0AAAAAAANBbQAAAAAAA4FtAAAAAAABgXUBI4XoUrrddQPYoXI/CtV1AAAAAAAAwXUAAAAAAAOBcQEjhehSu91xAAAAAAABQXEAAAAAAAFBcQEjhehSu11xAAAAAAABgXEAAAAAAANBbQKRwPQrXs1tASOF6FK43XEAAAAAAADBbQEjhehSud1tApHA9CteDW0BI4XoUridbQKRwPQrXE1tASOF6FK5HWUAAAAAAAABZQEjhehSuZ1lASOF6FK63WUAAAAAAAEBZQEjhehSup1lAAAAAAACAWUBI4XoUrsdZQFyPwvUoDFpASOF6FK6nWUAAAAAAAEBZQAAAAAAA8FtAAAAAAABwXEA=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                },
+                                "open": {
+                                    "__ndarray__": "AAAAAACAWUAAAAAAACBZQAAAAAAA0FpAXI/C9Sh8W0AAAAAAAIBaQAAAAAAAwFlAAAAAAACgWkBI4XoUrudaQAAAAAAAAFpAAAAAAADwWkAAAAAAAOBaQAAAAAAAQFtAAAAAAAAQW0AAAAAAAIBbQKRwPQrXM1xAAAAAAACgXEBI4XoUrvdcQEjhehSu11xAAAAAAABAX0AAAAAAAHBfQKRwPQrXk15ASOF6FK63XUBI4XoUrqdeQAAAAAAAAF5AAAAAAABgXkAAAAAAACBeQAAAAAAA4F5AAAAAAADgXkAAAAAAADBfQEjhehSuZ15ASOF6FK7nXUAAAAAAACBcQKRwPQrXc1tASOF6FK73WUAAAAAAABBcQAAAAAAAcFtAAAAAAABAWkAAAAAAAIBZQAAAAAAAoFpAAAAAAAAgXEAAAAAAAGBbQAAAAAAAAFxAAAAAAAAgXEAAAAAAAMBbQAAAAAAAoFtASOF6FK5HW0BI4XoUrqdaQKRwPQrXA1tAAAAAAACgW0AAAAAAAGBaQAAAAAAAAFpAAAAAAADwWUAAAAAAAABaQEjhehSuR1pAAAAAAADgWkBI4XoUrodaQKRwPQrXg1pAAAAAAACAWkAAAAAAAEBbQAAAAAAAoFpAAAAAAACgW0AAAAAAAGBaQAAAAAAA8FpAAAAAAACgW0CkcD0K1+NaQAAAAAAAQFtAXI/C9SgcW0AAAAAAABBcQAAAAAAAIFxASOF6FK7XXUBI4XoUrvddQEjhehSux11ASOF6FK63XUBI4XoUrrddQAAAAAAAAF1ApHA9CtcTXUAAAAAAAGBcQAAAAAAAAF5ApHA9CtfjXEBI4XoUrodcQAAAAAAAYFxAAAAAAABAXEBI4XoUrudbQAAAAAAAgFtAAAAAAADwW0Bcj8L1KCxcQAAAAAAAMFtASOF6FK5nWkAAAAAAAEBaQFyPwvUorFlAXI/C9SgsWkAAAAAAANBZQFyPwvUozFlAXI/C9ShcWkAAAAAAAPBZQFyPwvUoHFpASOF6FK4HWkBI4XoUrpdZQAAAAAAAAFxAAAAAAABAXUA=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                },
+                                "volume": [
+                                    10807800,
+                                    11192900,
+                                    10162800,
+                                    10747400,
+                                    10035100,
+                                    8376400,
+                                    6334100,
+                                    7093200,
+                                    7871000,
+                                    7973700,
+                                    5665900,
+                                    6622500,
+                                    8857300,
+                                    6563500,
+                                    6771600,
+                                    6137800,
+                                    6492400,
+                                    12125600,
+                                    11862900,
+                                    8149600,
+                                    7312300,
+                                    9158000,
+                                    8015200,
+                                    7715600,
+                                    16667200,
+                                    8693500,
+                                    8887400,
+                                    5380300,
+                                    5507300,
+                                    7738700,
+                                    8885200,
+                                    8236400,
+                                    11782000,
+                                    9969500,
+                                    8205500,
+                                    14674500,
+                                    10633300,
+                                    8523100,
+                                    9576400,
+                                    6182800,
+                                    6317500,
+                                    4888600,
+                                    4196100,
+                                    4085000,
+                                    5543800,
+                                    3631300,
+                                    4695100,
+                                    4826900,
+                                    4864900,
+                                    10012700,
+                                    8106200,
+                                    5599700,
+                                    5907800,
+                                    7265800,
+                                    5524500,
+                                    4577200,
+                                    6419200,
+                                    6769400,
+                                    5978900,
+                                    8184200,
+                                    5967600,
+                                    4296900,
+                                    3617500,
+                                    3732500,
+                                    5712500,
+                                    5473300,
+                                    7281400,
+                                    5369400,
+                                    11115500,
+                                    9325600,
+                                    4739100,
+                                    3640300,
+                                    4008600,
+                                    5282600,
+                                    5386300,
+                                    8046200,
+                                    6059200,
+                                    7103800,
+                                    6487000,
+                                    4853100,
+                                    3360900,
+                                    3625900,
+                                    6607900,
+                                    6436600,
+                                    7688500,
+                                    8612600,
+                                    2304400,
+                                    14339600,
+                                    12932700,
+                                    9031700,
+                                    4212200,
+                                    5619800,
+                                    5550500,
+                                    5669700,
+                                    4020000,
+                                    6632700,
+                                    6452700,
+                                    7781400,
+                                    23048400,
+                                    8966400
+                                ]
+                            },
+                            "selected": {
+                                "id": "63771",
+                                "type": "Selection"
+                            },
+                            "selection_policy": {
+                                "id": "63772",
+                                "type": "UnionRenderers"
+                            }
+                        },
+                        "id": "63706",
+                        "type": "ColumnDataSource"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "65591",
+                        "type": "YearsTicker"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "65592",
+                        "type": "Selection"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "65593",
+                        "type": "UnionRenderers"
+                    },
+                    {
+                        "attributes": {
+                            "booleans": [
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                true,
+                                true,
+                                true,
+                                true,
+                                true,
+                                false,
+                                true,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true
+                            ]
+                        },
+                        "id": "63709",
+                        "type": "BooleanFilter"
+                    },
+                    {
+                        "attributes": {
+                            "plot": null,
+                            "text": "IBM Stock volume"
+                        },
+                        "id": "63777",
+                        "type": "Title"
+                    },
+                    {
+                        "attributes": {
+                            "base": 60,
+                            "mantissas": [
+                                1,
+                                2,
+                                5,
+                                10,
+                                15,
+                                20,
+                                30
+                            ],
+                            "max_interval": 1800000.0,
+                            "min_interval": 1000.0,
+                            "num_minor_ticks": 0
+                        },
+                        "id": "63760",
+                        "type": "AdaptiveTicker"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11,
+                                12,
+                                13,
+                                14,
+                                15,
+                                16,
+                                17,
+                                18,
+                                19,
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                25,
+                                26,
+                                27,
+                                28,
+                                29,
+                                30,
+                                31
+                            ]
+                        },
+                        "id": "63762",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "below": [
+                                {
+                                    "id": "63787",
+                                    "type": "DatetimeAxis"
+                                }
+                            ],
+                            "left": [
+                                {
+                                    "id": "63792",
+                                    "type": "LinearAxis"
+                                }
+                            ],
+                            "outline_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "plot_height": 200,
+                            "plot_width": 1000,
+                            "renderers": [
+                                {
+                                    "id": "63787",
+                                    "type": "DatetimeAxis"
+                                },
+                                {
+                                    "id": "63791",
+                                    "type": "Grid"
+                                },
+                                {
+                                    "id": "63792",
+                                    "type": "LinearAxis"
+                                },
+                                {
+                                    "id": "63796",
+                                    "type": "Grid"
+                                },
+                                {
+                                    "id": "63805",
+                                    "type": "BoxAnnotation"
+                                },
+                                {
+                                    "id": "63815",
+                                    "type": "GlyphRenderer"
+                                }
+                            ],
+                            "title": {
+                                "id": "63777",
+                                "type": "Title"
+                            },
+                            "toolbar": {
+                                "id": "63803",
+                                "type": "Toolbar"
+                            },
+                            "toolbar_location": null,
+                            "x_range": {
+                                "id": "63714",
+                                "type": "DataRange1d"
+                            },
+                            "x_scale": {
+                                "id": "63783",
+                                "type": "LinearScale"
+                            },
+                            "y_range": {
+                                "id": "63781",
+                                "type": "Range1d"
+                            },
+                            "y_scale": {
+                                "id": "63785",
+                                "type": "LinearScale"
+                            }
+                        },
+                        "id": "63778",
+                        "subtype": "Figure",
+                        "type": "Plot"
+                    },
+                    {
+                        "attributes": {
+                            "base": 24,
+                            "mantissas": [
+                                1,
+                                2,
+                                4,
+                                6,
+                                8,
+                                12
+                            ],
+                            "max_interval": 43200000.0,
+                            "min_interval": 3600000.0,
+                            "num_minor_ticks": 0
+                        },
+                        "id": "63761",
+                        "type": "AdaptiveTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11
+                            ]
+                        },
+                        "id": "63766",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                15
+                            ]
+                        },
+                        "id": "63765",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "filters": [
+                                {
+                                    "id": "63707",
+                                    "type": "BooleanFilter"
+                                }
+                            ],
+                            "source": {
+                                "id": "63706",
+                                "type": "ColumnDataSource"
+                            }
+                        },
+                        "id": "63708",
+                        "type": "CDSView"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                8,
+                                15,
+                                22
+                            ]
+                        },
+                        "id": "63764",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {
+                            "axis_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "formatter": {
+                                "id": "63755",
+                                "type": "DatetimeTickFormatter"
+                            },
+                            "plot": {
+                                "id": "63712",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63723",
+                                "type": "DatetimeTicker"
+                            }
+                        },
+                        "id": "63722",
+                        "type": "DatetimeAxis"
+                    },
+                    {
+                        "attributes": {
+                            "days": [
+                                1,
+                                4,
+                                7,
+                                10,
+                                13,
+                                16,
+                                19,
+                                22,
+                                25,
+                                28
+                            ]
+                        },
+                        "id": "63763",
+                        "type": "DaysTicker"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63772",
+                        "type": "UnionRenderers"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63771",
+                        "type": "Selection"
+                    },
+                    {
+                        "attributes": {
+                            "data_source": {
+                                "id": "63706",
+                                "type": "ColumnDataSource"
+                            },
+                            "glyph": {
+                                "id": "63742",
+                                "type": "Segment"
+                            },
+                            "hover_glyph": null,
+                            "muted_glyph": null,
+                            "nonselection_glyph": {
+                                "id": "63743",
+                                "type": "Segment"
+                            },
+                            "selection_glyph": null,
+                            "view": {
+                                "id": "63745",
+                                "type": "CDSView"
+                            }
+                        },
+                        "id": "63744",
+                        "type": "GlyphRenderer"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                4,
+                                8
+                            ]
+                        },
+                        "id": "63768",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                6
+                            ]
+                        },
+                        "id": "63769",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "data_source": {
+                                "id": "63706",
+                                "type": "ColumnDataSource"
+                            },
+                            "glyph": {
+                                "id": "63747",
+                                "type": "VBar"
+                            },
+                            "hover_glyph": null,
+                            "muted_glyph": null,
+                            "name": "ups",
+                            "nonselection_glyph": {
+                                "id": "63748",
+                                "type": "VBar"
+                            },
+                            "selection_glyph": null,
+                            "view": {
+                                "id": "63708",
+                                "type": "CDSView"
+                            }
+                        },
+                        "id": "63749",
+                        "type": "GlyphRenderer"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63770",
+                        "type": "YearsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "months": [
+                                0,
+                                2,
+                                4,
+                                6,
+                                8,
+                                10
+                            ]
+                        },
+                        "id": "63767",
+                        "type": "MonthsTicker"
+                    },
+                    {
+                        "attributes": {
+                            "booleans": [
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                true,
+                                true,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                false,
+                                true,
+                                true,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false,
+                                true,
+                                true,
+                                false
+                            ]
+                        },
+                        "id": "63707",
+                        "type": "BooleanFilter"
+                    },
+                    {
+                        "attributes": {
+                            "num_minor_ticks": 5,
+                            "tickers": [
+                                {
+                                    "id": "63759",
+                                    "type": "AdaptiveTicker"
+                                },
+                                {
+                                    "id": "63760",
+                                    "type": "AdaptiveTicker"
+                                },
+                                {
+                                    "id": "63761",
+                                    "type": "AdaptiveTicker"
+                                },
+                                {
+                                    "id": "63762",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "63763",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "63764",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "63765",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "63766",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "63767",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "63768",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "63769",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "63770",
+                                    "type": "YearsTicker"
+                                }
+                            ]
+                        },
+                        "id": "63723",
+                        "type": "DatetimeTicker"
+                    },
+                    {
+                        "attributes": {
+                            "mantissas": [
+                                1,
+                                2,
+                                5
+                            ],
+                            "max_interval": 500.0,
+                            "num_minor_ticks": 0
+                        },
+                        "id": "63759",
+                        "type": "AdaptiveTicker"
+                    },
+                    {
+                        "attributes": {
+                            "callback": null,
+                            "end": 25000000.0
+                        },
+                        "id": "63781",
+                        "type": "Range1d"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63720",
+                        "type": "LinearScale"
+                    },
+                    {
+                        "attributes": {
+                            "bottom_units": "screen",
+                            "fill_alpha": {
+                                "value": 0.5
+                            },
+                            "fill_color": {
+                                "value": "lightgrey"
+                            },
+                            "left_units": "screen",
+                            "level": "overlay",
+                            "line_alpha": {
+                                "value": 1.0
+                            },
+                            "line_color": {
+                                "value": "black"
+                            },
+                            "line_dash": [
+                                4,
+                                4
+                            ],
+                            "line_width": {
+                                "value": 2
+                            },
+                            "plot": null,
+                            "render_mode": "css",
+                            "right_units": "screen",
+                            "top_units": "screen"
+                        },
+                        "id": "63805",
+                        "type": "BoxAnnotation"
+                    },
+                    {
+                        "attributes": {
+                            "callback": null
+                        },
+                        "id": "63716",
+                        "type": "DataRange1d"
+                    },
+                    {
+                        "attributes": {
+                            "axis_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "formatter": {
+                                "id": "65563",
+                                "type": "DatetimeTickFormatter"
+                            },
+                            "plot": {
+                                "id": "63778",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63788",
+                                "type": "DatetimeTicker"
+                            }
+                        },
+                        "id": "63787",
+                        "type": "DatetimeAxis"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63718",
+                        "type": "LinearScale"
+                    },
+                    {
+                        "attributes": {
+                            "fill_alpha": {
+                                "value": 0.1
+                            },
+                            "fill_color": {
+                                "value": "#1f77b4"
+                            },
+                            "line_alpha": {
+                                "value": 0.1
+                            },
+                            "line_color": {
+                                "value": "#1f77b4"
+                            },
+                            "top": {
+                                "field": "top"
+                            },
+                            "width": {
+                                "value": 43200000.0
+                            },
+                            "x": {
+                                "field": "x"
+                            }
+                        },
+                        "id": "63814",
+                        "type": "VBar"
+                    },
+                    {
+                        "attributes": {
+                            "grid_line_alpha": {
+                                "value": 0.5
+                            },
+                            "grid_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "plot": {
+                                "id": "63778",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63788",
+                                "type": "DatetimeTicker"
+                            }
+                        },
+                        "id": "63791",
+                        "type": "Grid"
+                    },
+                    {
+                        "attributes": {
+                            "plot": null,
+                            "text": "IBM Stock"
+                        },
+                        "id": "63711",
+                        "type": "Title"
+                    },
+                    {
+                        "attributes": {
+                            "bottom": {
+                                "field": "close"
+                            },
+                            "fill_alpha": {
+                                "value": 0.8
+                            },
+                            "fill_color": {
+                                "value": "forestgreen"
+                            },
+                            "line_alpha": {
+                                "value": 0.8
+                            },
+                            "top": {
+                                "field": "open"
+                            },
+                            "width": {
+                                "value": 43200000.0
+                            },
+                            "x": {
+                                "field": "date"
+                            }
+                        },
+                        "id": "63747",
+                        "type": "VBar"
+                    },
+                    {
+                        "attributes": {
+                            "callback": null
+                        },
+                        "id": "63714",
+                        "type": "DataRange1d"
+                    },
+                    {
+                        "attributes": {
+                            "below": [
+                                {
+                                    "id": "63722",
+                                    "type": "DatetimeAxis"
+                                }
+                            ],
+                            "left": [
+                                {
+                                    "id": "63727",
+                                    "type": "LinearAxis"
+                                }
+                            ],
+                            "outline_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "plot_height": 300,
+                            "plot_width": 1000,
+                            "renderers": [
+                                {
+                                    "id": "63722",
+                                    "type": "DatetimeAxis"
+                                },
+                                {
+                                    "id": "63726",
+                                    "type": "Grid"
+                                },
+                                {
+                                    "id": "63727",
+                                    "type": "LinearAxis"
+                                },
+                                {
+                                    "id": "63731",
+                                    "type": "Grid"
+                                },
+                                {
+                                    "id": "63744",
+                                    "type": "GlyphRenderer"
+                                },
+                                {
+                                    "id": "63749",
+                                    "type": "GlyphRenderer"
+                                },
+                                {
+                                    "id": "63753",
+                                    "type": "GlyphRenderer"
+                                }
+                            ],
+                            "title": {
+                                "id": "63711",
+                                "type": "Title"
+                            },
+                            "toolbar": {
+                                "id": "63736",
+                                "type": "Toolbar"
+                            },
+                            "x_range": {
+                                "id": "63714",
+                                "type": "DataRange1d"
+                            },
+                            "x_scale": {
+                                "id": "63718",
+                                "type": "LinearScale"
+                            },
+                            "y_range": {
+                                "id": "63716",
+                                "type": "DataRange1d"
+                            },
+                            "y_scale": {
+                                "id": "63720",
+                                "type": "LinearScale"
+                            }
+                        },
+                        "id": "63712",
+                        "subtype": "Figure",
+                        "type": "Plot"
+                    },
+                    {
+                        "attributes": {
+                            "line_alpha": {
+                                "value": 0.1
+                            },
+                            "line_color": {
+                                "value": "#1f77b4"
+                            },
+                            "line_width": {
+                                "value": 0.5
+                            },
+                            "x0": {
+                                "field": "date"
+                            },
+                            "x1": {
+                                "field": "date"
+                            },
+                            "y0": {
+                                "field": "high"
+                            },
+                            "y1": {
+                                "field": "low"
+                            }
+                        },
+                        "id": "63743",
+                        "type": "Segment"
+                    },
+                    {
+                        "attributes": {
+                            "num_minor_ticks": 5,
+                            "tickers": [
+                                {
+                                    "id": "65580",
+                                    "type": "AdaptiveTicker"
+                                },
+                                {
+                                    "id": "65581",
+                                    "type": "AdaptiveTicker"
+                                },
+                                {
+                                    "id": "65582",
+                                    "type": "AdaptiveTicker"
+                                },
+                                {
+                                    "id": "65583",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "65584",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "65585",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "65586",
+                                    "type": "DaysTicker"
+                                },
+                                {
+                                    "id": "65587",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "65588",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "65589",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "65590",
+                                    "type": "MonthsTicker"
+                                },
+                                {
+                                    "id": "65591",
+                                    "type": "YearsTicker"
+                                }
+                            ]
+                        },
+                        "id": "63788",
+                        "type": "DatetimeTicker"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63783",
+                        "type": "LinearScale"
+                    },
+                    {
+                        "attributes": {
+                            "filters": [
+                                {
+                                    "id": "63709",
+                                    "type": "BooleanFilter"
+                                }
+                            ],
+                            "source": {
+                                "id": "63706",
+                                "type": "ColumnDataSource"
+                            }
+                        },
+                        "id": "63710",
+                        "type": "CDSView"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63785",
+                        "type": "LinearScale"
+                    },
+                    {
+                        "attributes": {
+                            "axis_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "formatter": {
+                                "id": "63775",
+                                "type": "NumeralTickFormatter"
+                            },
+                            "major_tick_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "minor_tick_line_color": {
+                                "value": null
+                            },
+                            "plot": {
+                                "id": "63712",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63728",
+                                "type": "BasicTicker"
+                            }
+                        },
+                        "id": "63727",
+                        "type": "LinearAxis"
+                    },
+                    {
+                        "attributes": {
+                            "axis_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "formatter": {
+                                "id": "63817",
+                                "type": "NumeralTickFormatter"
+                            },
+                            "major_tick_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "minor_tick_line_color": {
+                                "value": null
+                            },
+                            "plot": {
+                                "id": "63778",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63793",
+                                "type": "BasicTicker"
+                            }
+                        },
+                        "id": "63792",
+                        "type": "LinearAxis"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63801",
+                        "type": "ResetTool"
+                    },
+                    {
+                        "attributes": {
+                            "grid_line_alpha": {
+                                "value": 0.5
+                            },
+                            "grid_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "plot": {
+                                "id": "63712",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63723",
+                                "type": "DatetimeTicker"
+                            }
+                        },
+                        "id": "63726",
+                        "type": "Grid"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63728",
+                        "type": "BasicTicker"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63793",
+                        "type": "BasicTicker"
+                    },
+                    {
+                        "attributes": {
+                            "dimension": 1,
+                            "grid_line_alpha": {
+                                "value": 0.5
+                            },
+                            "grid_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "plot": {
+                                "id": "63778",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63793",
+                                "type": "BasicTicker"
+                            }
+                        },
+                        "id": "63796",
+                        "type": "Grid"
+                    },
+                    {
+                        "attributes": {
+                            "callback": null,
+                            "formatters": {
+                                "date": "datetime"
+                            },
+                            "names": [
+                                "ups",
+                                "downs"
+                            ],
+                            "renderers": "auto",
+                            "tooltips": [
+                                [
+                                    "Datetime",
+                                    "@date{%Y-%m-%d}"
+                                ],
+                                [
+                                    "Open",
+                                    "@open{$0,0.00}"
+                                ],
+                                [
+                                    "Close",
+                                    "@close{$0,0.00}"
+                                ],
+                                [
+                                    "Volume",
+                                    "@volume{($ 0.00 a)}"
+                                ]
+                            ]
+                        },
+                        "id": "63733",
+                        "type": "HoverTool"
+                    },
+                    {
+                        "attributes": {
+                            "bottom": {
+                                "field": "close"
+                            },
+                            "fill_alpha": {
+                                "value": 0.1
+                            },
+                            "fill_color": {
+                                "value": "#1f77b4"
+                            },
+                            "line_alpha": {
+                                "value": 0.1
+                            },
+                            "line_color": {
+                                "value": "#1f77b4"
+                            },
+                            "top": {
+                                "field": "open"
+                            },
+                            "width": {
+                                "value": 43200000.0
+                            },
+                            "x": {
+                                "field": "date"
+                            }
+                        },
+                        "id": "63748",
+                        "type": "VBar"
+                    },
+                    {
+                        "attributes": {
+                            "dimensions": "width"
+                        },
+                        "id": "63732",
+                        "type": "PanTool"
+                    },
+                    {
+                        "attributes": {
+                            "callback": null,
+                            "data": {
+                                "top": [
+                                    10807800,
+                                    11192900,
+                                    10162800,
+                                    10747400,
+                                    10035100,
+                                    8376400,
+                                    6334100,
+                                    7093200,
+                                    7871000,
+                                    7973700,
+                                    5665900,
+                                    6622500,
+                                    8857300,
+                                    6563500,
+                                    6771600,
+                                    6137800,
+                                    6492400,
+                                    12125600,
+                                    11862900,
+                                    8149600,
+                                    7312300,
+                                    9158000,
+                                    8015200,
+                                    7715600,
+                                    16667200,
+                                    8693500,
+                                    8887400,
+                                    5380300,
+                                    5507300,
+                                    7738700,
+                                    8885200,
+                                    8236400,
+                                    11782000,
+                                    9969500,
+                                    8205500,
+                                    14674500,
+                                    10633300,
+                                    8523100,
+                                    9576400,
+                                    6182800,
+                                    6317500,
+                                    4888600,
+                                    4196100,
+                                    4085000,
+                                    5543800,
+                                    3631300,
+                                    4695100,
+                                    4826900,
+                                    4864900,
+                                    10012700,
+                                    8106200,
+                                    5599700,
+                                    5907800,
+                                    7265800,
+                                    5524500,
+                                    4577200,
+                                    6419200,
+                                    6769400,
+                                    5978900,
+                                    8184200,
+                                    5967600,
+                                    4296900,
+                                    3617500,
+                                    3732500,
+                                    5712500,
+                                    5473300,
+                                    7281400,
+                                    5369400,
+                                    11115500,
+                                    9325600,
+                                    4739100,
+                                    3640300,
+                                    4008600,
+                                    5282600,
+                                    5386300,
+                                    8046200,
+                                    6059200,
+                                    7103800,
+                                    6487000,
+                                    4853100,
+                                    3360900,
+                                    3625900,
+                                    6607900,
+                                    6436600,
+                                    7688500,
+                                    8612600,
+                                    2304400,
+                                    14339600,
+                                    12932700,
+                                    9031700,
+                                    4212200,
+                                    5619800,
+                                    5550500,
+                                    5669700,
+                                    4020000,
+                                    6632700,
+                                    6452700,
+                                    7781400,
+                                    23048400,
+                                    8966400
+                                ],
+                                "x": {
+                                    "__ndarray__": "AACAp/mza0IAAABznrRrQgAAgD5DtWtCAAAAoTG3a0IAAIBs1rdrQgAAADh7uGtCAACAAyC5a0IAAADPxLlrQgAAgDGzu2tCAAAA/Ve8a0IAAIDI/LxrQgAAAJShvWtCAACAX0a+a0IAAADCNMBrQgAAgI3ZwGtCAAAAWX7Ba0IAAIAkI8JrQgAAAPDHwmtCAACAUrbEa0IAAAAeW8VrQgAAgOn/xWtCAAAAtaTGa0IAAICAScdrQgAAAOM3yWtCAACArtzJa0IAAAB6gcprQgAAgEUmy2tCAAAAEcvLa0IAAIBzuc1rQgAAAD9ezmtCAACACgPPa0IAAADWp89rQgAAgKFM0GtCAAAABDvSa0IAAIDP39JrQgAAAJuE02tCAACAZinUa0IAAICUvNZrQgAAAGBh12tCAACAKwbYa0IAAAD3qthrQgAAgMJP2WtCAAAAJT7ba0IAAIDw4ttrQgAAALyH3GtCAACAhyzda0IAAABT0d1rQgAAgLW/32tCAAAAgWTga0IAAIBMCeFrQgAAABiu4WtCAACA41Lia0IAAABGQeRrQgAAgBHm5GtCAAAA3Yrla0IAAICoL+ZrQgAAAHTU5mtCAACA1sLoa0IAAACiZ+lrQgAAgG0M6mtCAAAAObHqa0IAAIAEVutrQgAAgDLp7WtCAAAA/o3ua0IAAIDJMu9rQgAAAJXX72tCAACA98Xxa0IAAADDavJrQgAAgI4P82tCAAAAWrTza0IAAIAlWfRrQgAAAIhH9mtCAACAU+z2a0IAAAAfkfdrQgAAgOo1+GtCAAAAttr4a0IAAIAYyfprQgAAAORt+2tCAACArxL8a0IAAAB7t/xrQgAAgEZc/WtCAAAAqUr/a0IAAIB07/9rQgAAAECUAGxCAACACzkBbEIAAADX3QFsQgAAgDnMA2xCAACA0BUFbEIAAACcugVsQgAAgGdfBmxCAAAAyk0IbEIAAICV8ghsQgAAAGGXCWxCAACALDwKbEIAAAD44ApsQgAAgFrPDGxCAAAAJnQNbEIAAIDxGA5sQgAAAL29DmxCAACAiGIPbEI=",
+                                    "dtype": "float64",
+                                    "shape": [
+                                        100
+                                    ]
+                                }
+                            },
+                            "selected": {
+                                "id": "65592",
+                                "type": "Selection"
+                            },
+                            "selection_policy": {
+                                "id": "65593",
+                                "type": "UnionRenderers"
+                            }
+                        },
+                        "id": "63812",
+                        "type": "ColumnDataSource"
+                    },
+                    {
+                        "attributes": {
+                            "fill_color": {
+                                "value": "steelblue"
+                            },
+                            "line_color": {
+                                "value": "steelblue"
+                            },
+                            "top": {
+                                "field": "top"
+                            },
+                            "width": {
+                                "value": 43200000.0
+                            },
+                            "x": {
+                                "field": "x"
+                            }
+                        },
+                        "id": "63813",
+                        "type": "VBar"
+                    },
+                    {
+                        "attributes": {
+                            "format": "($ 0.00 a)"
+                        },
+                        "id": "63817",
+                        "type": "NumeralTickFormatter"
+                    },
+                    {
+                        "attributes": {
+                            "data_source": {
+                                "id": "63706",
+                                "type": "ColumnDataSource"
+                            },
+                            "glyph": {
+                                "id": "63751",
+                                "type": "VBar"
+                            },
+                            "hover_glyph": null,
+                            "muted_glyph": null,
+                            "name": "downs",
+                            "nonselection_glyph": {
+                                "id": "63752",
+                                "type": "VBar"
+                            },
+                            "selection_glyph": null,
+                            "view": {
+                                "id": "63710",
+                                "type": "CDSView"
+                            }
+                        },
+                        "id": "63753",
+                        "type": "GlyphRenderer"
+                    },
+                    {
+                        "attributes": {
+                            "line_width": {
+                                "value": 0.5
+                            },
+                            "x0": {
+                                "field": "date"
+                            },
+                            "x1": {
+                                "field": "date"
+                            },
+                            "y0": {
+                                "field": "high"
+                            },
+                            "y1": {
+                                "field": "low"
+                            }
+                        },
+                        "id": "63742",
+                        "type": "Segment"
+                    },
+                    {
+                        "attributes": {
+                            "active_drag": "auto",
+                            "active_inspect": "auto",
+                            "active_multi": null,
+                            "active_scroll": "auto",
+                            "active_tap": "auto",
+                            "tools": [
+                                {
+                                    "id": "63797",
+                                    "type": "PanTool"
+                                },
+                                {
+                                    "id": "63798",
+                                    "type": "WheelZoomTool"
+                                },
+                                {
+                                    "id": "63799",
+                                    "type": "BoxZoomTool"
+                                },
+                                {
+                                    "id": "63800",
+                                    "type": "SaveTool"
+                                },
+                                {
+                                    "id": "63801",
+                                    "type": "ResetTool"
+                                },
+                                {
+                                    "id": "63802",
+                                    "type": "HelpTool"
+                                }
+                            ]
+                        },
+                        "id": "63803",
+                        "type": "Toolbar"
+                    },
+                    {
+                        "attributes": {
+                            "bottom": {
+                                "field": "close"
+                            },
+                            "fill_alpha": {
+                                "value": 0.8
+                            },
+                            "fill_color": {
+                                "value": "firebrick"
+                            },
+                            "line_alpha": {
+                                "value": 0.8
+                            },
+                            "top": {
+                                "field": "open"
+                            },
+                            "width": {
+                                "value": 43200000.0
+                            },
+                            "x": {
+                                "field": "date"
+                            }
+                        },
+                        "id": "63751",
+                        "type": "VBar"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63755",
+                        "type": "DatetimeTickFormatter"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63797",
+                        "type": "PanTool"
+                    },
+                    {
+                        "attributes": {
+                            "dimension": 1,
+                            "grid_line_alpha": {
+                                "value": 0.5
+                            },
+                            "grid_line_color": {
+                                "value": "#CCCCCC"
+                            },
+                            "plot": {
+                                "id": "63712",
+                                "subtype": "Figure",
+                                "type": "Plot"
+                            },
+                            "ticker": {
+                                "id": "63728",
+                                "type": "BasicTicker"
+                            }
+                        },
+                        "id": "63731",
+                        "type": "Grid"
+                    },
+                    {
+                        "attributes": {
+                            "overlay": {
+                                "id": "63805",
+                                "type": "BoxAnnotation"
+                            }
+                        },
+                        "id": "63799",
+                        "type": "BoxZoomTool"
+                    },
+                    {
+                        "attributes": {
+                            "dimensions": "height"
+                        },
+                        "id": "63734",
+                        "type": "WheelZoomTool"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63798",
+                        "type": "WheelZoomTool"
+                    },
+                    {
+                        "attributes": {
+                            "bottom": {
+                                "field": "close"
+                            },
+                            "fill_alpha": {
+                                "value": 0.1
+                            },
+                            "fill_color": {
+                                "value": "#1f77b4"
+                            },
+                            "line_alpha": {
+                                "value": 0.1
+                            },
+                            "line_color": {
+                                "value": "#1f77b4"
+                            },
+                            "top": {
+                                "field": "open"
+                            },
+                            "width": {
+                                "value": 43200000.0
+                            },
+                            "x": {
+                                "field": "date"
+                            }
+                        },
+                        "id": "63752",
+                        "type": "VBar"
+                    },
+                    {
+                        "attributes": {
+                            "format": "$0,0.00"
+                        },
+                        "id": "63775",
+                        "type": "NumeralTickFormatter"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63735",
+                        "type": "ResetTool"
+                    },
+                    {
+                        "attributes": {
+                            "active_drag": "auto",
+                            "active_inspect": "auto",
+                            "active_multi": null,
+                            "active_scroll": "auto",
+                            "active_tap": "auto",
+                            "autohide": true,
+                            "logo": null,
+                            "tools": [
+                                {
+                                    "id": "63732",
+                                    "type": "PanTool"
+                                },
+                                {
+                                    "id": "63733",
+                                    "type": "HoverTool"
+                                },
+                                {
+                                    "id": "63734",
+                                    "type": "WheelZoomTool"
+                                },
+                                {
+                                    "id": "63735",
+                                    "type": "ResetTool"
+                                }
+                            ]
+                        },
+                        "id": "63736",
+                        "type": "Toolbar"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63800",
+                        "type": "SaveTool"
+                    },
+                    {
+                        "attributes": {
+                            "source": {
+                                "id": "63706",
+                                "type": "ColumnDataSource"
+                            }
+                        },
+                        "id": "63745",
+                        "type": "CDSView"
+                    },
+                    {
+                        "attributes": {},
+                        "id": "63802",
+                        "type": "HelpTool"
+                    }
+                ],
+                "root_ids": [
+                    "63819"
+                ]
+            },
+            "title": "Bokeh Application",
+            "version": "1.0.1"
+        }
+    }
+</script>
+<script type="text/javascript">
+    (function () {
+        var fn = function () {
+            Bokeh.safely(function () {
+                (function (root) {
+                    function embed_document(root) {
+
+                        var docs_json = document.getElementById('66113').textContent;
+                        var render_items = [{
+                            "docid": "a59ec414-d2df-4954-99b7-90aa23b17e21",
+                            "roots": {"63819": "aa4d6f6d-d554-4896-8686-8010c079a44a"}
+                        }];
+                        root.Bokeh.embed.embed_items(docs_json, render_items);
+
+                    }
+
+                    if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                    } else {
+                        var attempts = 0;
+                        var timer = setInterval(function (root) {
+                            if (root.Bokeh !== undefined) {
+                                embed_document(root);
+                                clearInterval(timer);
+                            }
+                            attempts++;
+                            if (attempts > 100) {
+                                console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                                clearInterval(timer);
+                            }
+                        }, 10, root)
+                    }
+                })(window);
+            });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+    })();
+</script>
+
+</body>
+
+</html>
